@@ -8,7 +8,7 @@
 
 from functools import wraps
 from time import perf_counter
-from typing import Optional
+from typing import Optional, Union, Callable
 
 WIDTH: int = 64
 
@@ -87,7 +87,7 @@ def timer(desc: Optional[str] = None):
             :param kwargs: Keyword arguments passed to the original function.
             :return: The return value of the original function.
             """
-            _desc: str = desc or func.__name__
+            _desc = desc or func.__name__
 
             print("*" * WIDTH)
             print(f"The function named {_desc!r} is starting:")
@@ -135,7 +135,7 @@ def clock(desc: Optional[str] = None):
             :param kwargs: Keyword arguments passed to the original function.
             :return: The return value of the original function.
             """
-            _desc: str = desc or func.__name__
+            _desc = desc or func.__name__
             _authorise: bool = kwargs.pop("display", True)
 
             if _authorise:
@@ -157,3 +157,55 @@ def clock(desc: Optional[str] = None):
         return wrapper
 
     return decorator
+
+
+def countdown(arg: Union[Callable, str, None] = None) -> Callable:
+    """
+    Decorator to time function execution and log performance.
+
+    This decorator measures the elapsed time of the decorated function
+    and prints a formatted log with the execution duration.
+
+    :param arg: The function to be decorated or the custom name for the function shown in logs.
+    :return: A wrapped function that adds timing and logging around the original call.
+    """
+    # @countdown
+    if callable(arg):
+        return _build_wrapper(arg, desc=None)
+
+    # @countdown() / @countdown("desc")
+    desc = arg
+
+    def decorator(func):
+        return _build_wrapper(func, desc=desc)
+
+    return decorator
+
+
+def _build_wrapper(func, desc: Optional[str]) -> Callable:
+    """
+    Inner decorator that wraps the target function with timing logic.
+    :param func: The function to be decorated.
+    :param desc: The custom name for the function shown in logs.
+    :return: The wrapped function with timing and logging.
+    """
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        _desc = desc or func.__name__
+        print("*" * WIDTH)
+        print(f"The function named {_desc!r} is starting:")
+        print("-" * WIDTH)
+
+        time_start = perf_counter()
+
+        try:
+            return func(*args, **kwargs)
+        finally:
+            time_elapsed = perf_counter() - time_start
+            print("-" * WIDTH)
+            print(f"The function named {_desc!r} took {time_elapsed:.4f} seconds to complete.")
+            print("*" * WIDTH)
+            print()
+
+    return wrapper
