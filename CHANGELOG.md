@@ -5,6 +5,10 @@
 
 ### Features
 
+- **utils:** add countdown decorator for function timing ([b50c083](https://github.com/DaoChaShao/py-spider-basic/commit/b50c0836c86d1b69e7ef21a4f01f999714e4d64d))
+- **utils:** add countdown decorator to utility module ([6a01e61](https://github.com/DaoChaShao/py-spider-basic/commit/6a01e6187df8fe0ddf3f5f23e2e9e834698ae27c))
+- **web:** add web request handler with user agent spoofing ([ea74385](https://github.com/DaoChaShao/py-spider-basic/commit/ea74385d190060d22f344c08653cdc6f87d37a43))
+- **web:** add web request handler with random sleep functionality ([0beba22](https://github.com/DaoChaShao/py-spider-basic/commit/0beba2295743ede41a4a629861cbf18c9955cc8e))
 - add uv.lock file ([aa48ae5](https://github.com/DaoChaShao/py-spider-basic/commit/aa48ae59c9e4445accd5d4f2892fa23c06e78c90))
 - **utils:** add text highlighting and formatting utilities ([b5e17da](https://github.com/DaoChaShao/py-spider-basic/commit/b5e17dab69105b7b160fd3d623bd5ab63cfb1281))
 - **utils:** add helper module with context managers for beautification timing and random seeding ([d3c9780](https://github.com/DaoChaShao/py-spider-basic/commit/d3c97800151d9eb0b0182059dcca8e3e88d397bd))
@@ -15,6 +19,7 @@
 
 ### Chore
 
+- **project:** initialize project with initial release changelog ([3ea8f75](https://github.com/DaoChaShao/py-spider-basic/commit/3ea8f75577d2a2d00bfcdaedba7fb77f8a829f8a))
 - **project:** initialize pyproject.toml with dependencies and tool configurations ([e1e3118](https://github.com/DaoChaShao/py-spider-basic/commit/e1e311813efc733159bedafb588510555ae3d28e))
 - **env:** add python version file ([c4a4d7a](https://github.com/DaoChaShao/py-spider-basic/commit/c4a4d7ae68ef1ab27eb67cdf9cfb874ceb292b0b))
 - **project:** add initial .gitignore file for Python project ([dea3a7c](https://github.com/DaoChaShao/py-spider-basic/commit/dea3a7c0033f94eb1db05e6d29b28e995d1fa6ce))
