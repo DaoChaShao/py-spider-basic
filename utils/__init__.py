@@ -19,7 +19,7 @@ __author__ = "Shawn Yu"
 __version__ = "0.1.0"
 
 from .decorator import (beautifier,
-                        timer, clock)
+                        timer, clock, countdown)
 from .helper import (Beautifier, Timer,
                      RandomSeed)
 from .highlighter import (black, red, green, yellow, blue, purple, cyan, white,
@@ -29,6 +29,7 @@ from .highlighter import (black, red, green, yellow, blue, purple, cyan, white,
 __all__ = [
     "beautifier",
     "timer", "clock",
+    "countdown",
 
     "Beautifier",
     "Timer",
