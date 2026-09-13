@@ -1,10 +1,18 @@
 <!-- insertion marker -->
 <a name="0.1.0"></a>
 
-## [0.1.0](https://github.com/DaoChaShao/py-spider-basic/compare/638690a9f8a9e7fc620c97dc5f17d66421be52e4...0.1.0) (2026-09-12)
+## [0.1.0](https://github.com/DaoChaShao/py-spider-basic/compare/638690a9f8a9e7fc620c97dc5f17d66421be52e4...0.1.0) (2026-09-13)
 
 ### Features
 
+- **crawler:** add caching mechanism for web requests ([39d179e](https://github.com/DaoChaShao/py-spider-basic/commit/39d179e5c7914f98f237295ec7d72ef124e20151))
+- **crawler:** add comprehensive web scraping framework with random user agents ([825b0f0](https://github.com/DaoChaShao/py-spider-basic/commit/825b0f0e7f2cabeb3b8f0bd8f6861bfa0c38a6e1))
+- **crawler:** add web scraping framework with random UA and captcha recognition ([e13e5ae](https://github.com/DaoChaShao/py-spider-basic/commit/e13e5ae1a8d567f7b7bee012497a75769363ac0b))
+- **crawler:** add web scraping framework with random user agent support ([1537f5c](https://github.com/DaoChaShao/py-spider-basic/commit/1537f5cbd6d936bb4bb8414acc92dc2be1220104))
+- **crawler:** add web scraping framework with encoding detection ([6857847](https://github.com/DaoChaShao/py-spider-basic/commit/6857847e746830f476a46956b765260f8dc586e2))
+- **crawler:** add web request framework with response handling ([aad7093](https://github.com/DaoChaShao/py-spider-basic/commit/aad709370effeb0b76d32711b6a070042a6b3910))
+- **deps:** add new dependencies for enhanced functionality ([8495870](https://github.com/DaoChaShao/py-spider-basic/commit/8495870db6cf33ff67d97a5659e90961f73f1f67))
+- **utils:** add countdown decorator and web request handler utilities ([b6d088f](https://github.com/DaoChaShao/py-spider-basic/commit/b6d088fd0766986296985e5b7e7d725fb2d32a67))
 - **utils:** add countdown decorator for function timing ([b50c083](https://github.com/DaoChaShao/py-spider-basic/commit/b50c0836c86d1b69e7ef21a4f01f999714e4d64d))
 - **utils:** add countdown decorator to utility module ([6a01e61](https://github.com/DaoChaShao/py-spider-basic/commit/6a01e6187df8fe0ddf3f5f23e2e9e834698ae27c))
 - **web:** add web request handler with user agent spoofing ([ea74385](https://github.com/DaoChaShao/py-spider-basic/commit/ea74385d190060d22f344c08653cdc6f87d37a43))
@@ -19,6 +27,7 @@
 
 ### Chore
 
+- **deps:** update lockfile with new package entries and resolution markers ([11afbbb](https://github.com/DaoChaShao/py-spider-basic/commit/11afbbb0e777c303cff44404f0a27f07005a52af))
 - **project:** initialize project with initial release changelog ([3ea8f75](https://github.com/DaoChaShao/py-spider-basic/commit/3ea8f75577d2a2d00bfcdaedba7fb77f8a829f8a))
 - **project:** initialize pyproject.toml with dependencies and tool configurations ([e1e3118](https://github.com/DaoChaShao/py-spider-basic/commit/e1e311813efc733159bedafb588510555ae3d28e))
 - **env:** add python version file ([c4a4d7a](https://github.com/DaoChaShao/py-spider-basic/commit/c4a4d7ae68ef1ab27eb67cdf9cfb874ceb292b0b))
