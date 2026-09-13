@@ -5,6 +5,15 @@
 
 ### Features
 
+- update uv.lock file ([37ffad5](https://github.com/DaoChaShao/py-spider-basic/commit/37ffad54c616ef77494bd3a11bf584fea89e05a0))
+- **deps:** add new dependencies for web scraping and HTTP operations ([9ec9a57](https://github.com/DaoChaShao/py-spider-basic/commit/9ec9a5742190c149c75a9a32486ceaf0fad3ecd4))
+- **scraper:** add headless selenium web scraper implementation ([a4265d1](https://github.com/DaoChaShao/py-spider-basic/commit/a4265d11d48df63d16c4b6122dee6b2a0af8660a))
+- **selenium:** add standard selenium web scraping implementation ([fa80c2a](https://github.com/DaoChaShao/py-spider-basic/commit/fa80c2aa6c094a779b49d675de5deacc83be1068))
+- **scraper:** add asynchronous web scraping class with aiohttp ([88c5bae](https://github.com/DaoChaShao/py-spider-basic/commit/88c5baeb88d62b908a65ed7942cff66be9f69d16))
+- **scraper:** add async coroutine web scraping simulation ([8241cf3](https://github.com/DaoChaShao/py-spider-basic/commit/8241cf3747326c7d9a443fdbb5257dc02291a8da))
+- **crawler:** add asynchronous thread pool implementation for web scraping ([831f31e](https://github.com/DaoChaShao/py-spider-basic/commit/831f31ec51ed2c995c1cb799e67ddea81056be23))
+- **web-scraper:** add IP proxy and web scraping functionality ([738243f](https://github.com/DaoChaShao/py-spider-basic/commit/738243f9290609b5bcb02730fafd559640d4ac9d))
+- **crawler:** add comprehensive web scraping framework with caching and utilities ([aa1027c](https://github.com/DaoChaShao/py-spider-basic/commit/aa1027cb465e8a589111c019f1fcfddd823456da))
 - **crawler:** add caching mechanism for web requests ([39d179e](https://github.com/DaoChaShao/py-spider-basic/commit/39d179e5c7914f98f237295ec7d72ef124e20151))
 - **crawler:** add comprehensive web scraping framework with random user agents ([825b0f0](https://github.com/DaoChaShao/py-spider-basic/commit/825b0f0e7f2cabeb3b8f0bd8f6861bfa0c38a6e1))
 - **crawler:** add web scraping framework with random UA and captcha recognition ([e13e5ae](https://github.com/DaoChaShao/py-spider-basic/commit/e13e5ae1a8d567f7b7bee012497a75769363ac0b))
